@@ -1,8 +1,10 @@
 # Python Package Definition Navigator
 
-![Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.png)
+[Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.png)
 
-![Demo GIF](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.gif)
+[Demo GIF](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.gif)
+
+[Install Link](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.python-package-definition-navigator)
 
 Navigate directly to the definition of methods or classes in your Python virtual environment. This extension makes it easy to locate and open definitions, even for packages that the default Python extension cannot track.
 
