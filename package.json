@@ -1,7 +1,7 @@
 {
-  "name": "django-template-navigation",
-  "displayName": "Django Template Navigation",
-  "description": "Easily navigate to Django template tag definitions directly from `{% load ... %}` tags in your Django projects.",
+  "name": "python-package-definition-navigator",
+  "displayName": "Python Package Definition Navigator",
+  "description": "Navigate to Python package definitions for functions or classes in your virtual environment.",
   "license": "MIT",
   "version": "0.0.1",
   "engines": {
@@ -13,20 +13,25 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/southglory/django-template-navigation"
+    "url": "https://github.com/southglory/python-package-definition-navigator"
   },
-  "activationEvents": [
-    "onLanguage:django-html"
-  ],
-  "main": "./dist/extension.js",
+  "activationEvents": [],
   "contributes": {
     "commands": [
       {
-        "command": "django-template-navigation.navigateToTag",
-        "title": "Navigate to Template Tag"
+        "command": "pythonPackageNavigator.findDefinition",
+        "title": "Find Definition in Python Packages"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pythonPackageNavigator.findDefinition",
+        "key": "ctrl+1 ctrl+n",
+        "when": "editorTextFocus"
       }
     ]
   },
+  "main": "./dist/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
