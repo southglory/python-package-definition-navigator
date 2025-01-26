@@ -1,22 +1,29 @@
 {
   "name": "django-template-navigation",
-  "displayName": "django-template-navigation",
-  "description": "Navigate to Django template tags definitions directly from `{% load ... %}` tags.",
+  "displayName": "Django Template Navigation",
+  "description": "Easily navigate to Django template tag definitions directly from `{% load ... %}` tags in your Django projects.",
   "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Snippets"
   ],
-  "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/southglory/django-template-navigation"
+  },
+  "activationEvents": [
+    "onLanguage:django-html"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "django-template-navigation.helloWorld",
-        "title": "Hello World"
+        "command": "django-template-navigation.navigateToTag",
+        "title": "Navigate to Template Tag"
       }
     ]
   },
@@ -32,7 +39,7 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "check-types": "tsc --noEmit",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "npm run compile-tests && node esbuild.js --production && vscode-test"
   },
   "devDependencies": {
     "@types/vscode": "^1.96.0",
