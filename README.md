@@ -1,8 +1,8 @@
 # Python Package Definition Navigator
 
-[Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.png)
+![Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.png)
 
-[Demo GIF](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.gif)
+![Demo GIF](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.gif)
 
 [Install Link](https://marketplace.visualstudio.com/items?itemName=QG-devramyun.python-package-definition-navigator)
 
