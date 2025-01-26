@@ -1,11 +1,8 @@
 # Python Package Definition Navigator
 
-![Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202025-01-27%20013143.png)
+![Demo Image](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.png)
 
-
-
-<video src="https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/2025-01-27-01-24-03.mp4" controls="controls" style="max-width: 100%; height: auto;"></video>
-
+![Demo GIF](https://github.com/southglory/python-package-definition-navigator/blob/master/dev_log/demo.gif)
 
 Navigate directly to the definition of methods or classes in your Python virtual environment. This extension makes it easy to locate and open definitions, even for packages that the default Python extension cannot track.
 
@@ -36,6 +33,7 @@ To address this inconvenience, I developed this extension. It allows developers 
 
 2. **Highlight a Method or Class Name**:
    - Select the name of the method or class you want to find in the `Lib/site-packages` directory. For example:
+
      ```python
      {% bootstrap_pagination %}
      ```
@@ -45,24 +43,29 @@ To address this inconvenience, I developed this extension. It allows developers 
 
 ---
 
-
 ## Examples
 
 ### Example 1: Navigate to a Definition
+
 - Highlight `bootstrap_pagination` in your Django template:
+
   ```python
   {% bootstrap_pagination %}
   ```
+
 - Press Ctrl+1 Ctrl+D.
 - The extension will open the file django_bootstrap5/templatetags/bootstrap_pagination.py and navigate to the definition of bootstrap_pagination
 
 ---
 
 ### Example 2: Search for a File
+
 - Highlight 'django_bootstrap5' in your editor:
+
  ```python
 {% load django_bootstrap5 %}
  ```
+
 - Press Ctrl+1 Ctrl+F.
 - The extension will search for example.py and example.html in your workspace and virtual environment.
 - If multiple matches are found, select the file to open from the quick pick menu.
